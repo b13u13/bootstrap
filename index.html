@@ -20,7 +20,7 @@
     <![endif]-->
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
@@ -47,9 +47,24 @@
                     <li><a href="#">Пункт 3</a></li>
                     <li><a href="#">Пункт 4</a></li>
                 </ul>
+                <form action="" class="navbar-form navbar-right hidden-sm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email" value="">
+
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Пароль" value="">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-sign-in"></i> ВОЙТИ
+                    </button>
+                </form>
             </div>
         </div>
     </div>
+   <br>
+   <br>
+   <br>
 <div class="container-fluid" id="car">
     <div id="carousel" class="carousel slide">
         <!----Индикаторы слайдов--->
@@ -176,7 +191,124 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4 hidden-md visible-lg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#tab-1" data-toggle="tab">Вкладка 1</a></li>
+                                <li><a href="#tab-2" data-toggle="tab">Вкладка 2</a></li>
+                                <li><a href="#tab-3" data-toggle="tab">Вкладка 3</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab-1">
+                                    <p>Текст блаб ла </p>
+                                </div>
+                                <div class="tab-pane fade" id="tab-2">
+                                    <p>Текст блололаб ла </p>
+                                </div>
+                                <div class="tab-pane fade" id="tab-3">
+                                    <p>Текст болололлаб ла </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <a href="#spoiler-1" data-toggle="collapse" class="btn btn-primary spoiler collapsed">Cпойлер</a>
+                        <div class="collapse" id="spoiler-1">
+                            <div class="well">
+                                <p>Параграф с текстом</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="accordion" class="panel-group">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapse-1" data-parent="#accordion" data-toggle="collapse">Открыть первый слайд</a>
+                            </h4>
+                        </div>
+                        <div id="collapse-1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Текст ТекстТекстТекс ТекстТе ТекстТе ТекстТеТекст Текст Текст Текст Текст</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapse-2" data-parent="#accordion" data-toggle="collapse">Открыть второй слайд</a>
+                            </h4>
+                        </div>
+                        <div id="collapse-2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Текст ТекстТекстТекс ТекстТе ТекстТе ТекстТеТекст Текст Текст Текст Текст</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#collapse-3" data-parent="#accordion" data-toggle="collapse">Открыть третий слайд</a>
+                            </h4>
+                        </div>
+                        <div id="collapse-3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Текст ТекстТекстТекс ТекстТе ТекстТе ТекстТеТекст Текст Текст Текст Текст</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-1">Открыть модально окно</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="progress">
+                <div class="progress-bar progress-bar-primary" style="
+                min-width: 2%;
+                width: 10%
+                ">
+                </div>
+                <div class="progress-bar progress-bar-warning" style="
+                min-width: 2%;
+                width: 10%
+                ">
+                </div>
+                <div class="progress-bar progress-bar-danger" style="
+                min-width: 2%;
+                width: 10%
+                ">
+                </div>
+                <div class="progress-bar progress-bar-success" style="
+                min-width: 2%;
+                width: 10%
+                ">
+                </div>
+                <div class="progress-bar progress-bar-info" style="
+                min-width: 2%;
+                width: 10%
+                ">
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" style="
+                width: 50%;
+                ">
+
+                </div>
+            </div>
         </div>
     </div>
     <br>
@@ -191,6 +323,26 @@
     <br>
     <br>
     <br>
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">
+                        <i class="fa fa-close"></i>
+                    </button>
+                    <h4 class="modal-title">Название окна</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Это модальное окно</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
