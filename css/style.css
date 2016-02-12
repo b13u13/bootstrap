@@ -39,3 +39,8 @@ a.spoiler.collapsed:after{
         content: '3 .col-xs-4';
     }
 }
+
+.breadcrumb > li + li:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+}
